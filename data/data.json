@@ -1,0 +1,362 @@
+[
+  {
+    "categoria": "pupillos",
+    "productos": [
+      {
+        "id": 1,
+        "nombre": "",
+        "disponible": true,
+        "color": "Negro/Rojo",
+        "imagen": "/images/product-img/pupillos/pup-1.jpg"
+      },
+      {
+        "id": 2,
+        "nombre": "",
+        "disponible": true,
+        "color": "Negro/Rojo",
+        "imagen": "/images/product-img/pupillos/pup-2.jpg"
+      },
+      {
+        "id": 3,
+        "nombre": "",
+        "disponible": true,
+        "color": "Negro/Rojo",
+        "imagen": "/images/product-img/pupillos/pup-3.jpg"
+      },
+      {
+        "id": 4,
+        "nombre": "",
+        "disponible": true,
+        "color": "Negro/Rojo",
+        "imagen": "/images/product-img/pupillos/pup-4.jpg"
+      },
+      {
+        "id": 5,
+        "nombre": "",
+        "disponible": true,
+        "color": "Negro/Rojo",
+        "imagen": "/images/product-img/pupillos/pup-5.jpg"
+      },
+      {
+        "id": 6,
+        "nombre": "",
+        "disponible": true,
+        "color": "Negro/Rojo",
+        "imagen": "/images/product-img/pupillos/pup-6.jpg"
+      },
+      {
+        "id": 7,
+        "nombre": "",
+        "disponible": true,
+        "color": "Negro/Rojo",
+        "imagen": "/images/product-img/pupillos/pup-7.jpg"
+      }
+    ]
+  },
+  {
+    "categoria": "zapatos",
+
+    "productos": [
+      {
+        "id": 1,
+        "nombre": "",
+        "disponible": true,
+        "color": "Negro/Rojo",
+        "imagen": "/images/product-img/zapatos/zap-1.jpg"
+      },
+      {
+        "id": 2,
+        "nombre": "",
+        "disponible": true,
+        "color": "Negro/Rojo",
+        "imagen": "/images/product-img/zapatos/zap-2.jpg"
+      },
+      {
+        "id": 3,
+        "nombre": "",
+        "disponible": true,
+        "color": "Negro/Rojo",
+        "imagen": "/images/product-img/zapatos/zap-3.jpg"
+      },
+      {
+        "id": 4,
+        "nombre": "",
+        "disponible": true,
+        "color": "Negro/Rojo",
+        "imagen": "/images/product-img/zapatos/zap-4.jpg"
+      },
+      {
+        "id": 5,
+        "nombre": "",
+        "disponible": true,
+        "color": "Negro/Rojo",
+        "imagen": "/images/product-img/zapatos/zap-5.jpg"
+      },
+      {
+        "id": 6,
+        "nombre": "",
+        "disponible": true,
+        "color": "Negro/Rojo",
+        "imagen": "/images/product-img/zapatos/zap-6.jpg"
+      },
+      {
+        "id": 7,
+        "nombre": "",
+        "disponible": true,
+        "color": "Negro/Rojo",
+        "imagen": "/images/product-img/zapatos/zap-7.jpg"
+      },
+      {
+        "id": 8,
+        "nombre": "",
+        "disponible": true,
+        "color": "Negro/Rojo",
+        "imagen": "/images/product-img/zapatos/zap-8.jpg"
+      },
+      {
+        "id": 9,
+        "nombre": "",
+        "disponible": true,
+        "color": "Negro/Rojo",
+        "imagen": "/images/product-img/zapatos/zap-9.jpg"
+      },
+      {
+        "id": 10,
+        "nombre": "",
+        "disponible": true,
+        "color": "Negro/Rojo",
+        "imagen": "/images/product-img/zapatos/zap-10.jpg"
+      },
+      {
+        "id": 11,
+        "nombre": "",
+        "disponible": true,
+        "color": "Negro/Rojo",
+        "imagen": "/images/product-img/zapatos/zap-11.jpg"
+      },
+      {
+        "id": 12,
+        "nombre": "",
+        "disponible": true,
+        "color": "Negro/Rojo",
+        "imagen": "/images/product-img/zapatos/zap-12.jpg"
+      },
+      {
+        "id": 13,
+        "nombre": "",
+        "disponible": true,
+        "color": "Negro/Rojo",
+        "imagen": "/images/product-img/zapatos/zap-13.jpg"
+      },
+      {
+        "id": 14,
+        "nombre": "",
+        "disponible": true,
+        "color": "Negro/Rojo",
+        "imagen": "/images/product-img/zapatos/zap-14.jpg"
+      },
+      {
+        "id": 15,
+        "nombre": "",
+        "disponible": true,
+        "color": "Negro/Rojo",
+        "imagen": "/images/product-img/zapatos/zap-15.jpg"
+      },
+      {
+        "id": 16,
+        "nombre": "",
+        "disponible": true,
+        "color": "Negro/Rojo",
+        "imagen": "/images/product-img/zapatos/zap-16.jpg"
+      },
+      {
+        "id": 17,
+        "nombre": "",
+        "disponible": true,
+        "color": "Negro/Rojo",
+        "imagen": "/images/product-img/zapatos/zap-17.jpg"
+      },
+      {
+        "id": 18,
+        "nombre": "",
+        "disponible": true,
+        "color": "Negro/Rojo",
+        "imagen": "/images/product-img/zapatos/zap-18.jpg"
+      },
+      {
+        "id": 19,
+        "nombre": "",
+        "disponible": true,
+        "color": "Negro/Rojo",
+        "imagen": "/images/product-img/zapatos/zap-19.jpg"
+      },
+      {
+        "id": 20,
+        "nombre": "",
+        "disponible": true,
+        "color": "Negro/Rojo",
+        "imagen": "/images/product-img/zapatos/zap-20.jpg"
+      },
+      {
+        "id": 21,
+        "nombre": "",
+        "disponible": true,
+        "color": "Negro/Rojo",
+        "imagen": "/images/product-img/zapatos/zap-21.jpg"
+      },
+      {
+        "id": 22,
+        "nombre": "",
+        "disponible": true,
+        "color": "Negro/Rojo",
+        "imagen": "/images/product-img/zapatos/zap-22.jpg"
+      },
+      {
+        "id": 23,
+        "nombre": "",
+        "disponible": true,
+        "color": "Negro/Rojo",
+        "imagen": "/images/product-img/zapatos/zap-23.jpg"
+      }
+    ]
+  },
+  {
+     "categoria": "camisetas",
+     "productos": [
+       {
+         "id": 1,
+         "nombre": "",
+         "disponible": true,
+         "color": "Negro/Rojo",
+         "imagen": ["/images/product-img/camisetas/cam-1.jpg"]
+       },
+       {
+         "id": 2,
+         "nombre": "",
+         "disponible": true,
+         "color": "Negro/Rojo",
+         "imagen":[ "/images/product-img/camisetas/cam-2.jpg"]
+       },
+       {
+         "id": 3,
+         "nombre": "",
+         "disponible": true,
+         "color": "Negro/Rojo",
+         "imagen":[ "/images/product-img/camisetas/cam-4.jpg","/images/product-img/camisetas/cam-3.jpg"]
+       },
+           {
+         "id": 4,
+         "nombre": "",
+         "disponible": true,
+         "color": "Negro/Rojo",
+         "imagen":[ "/images/product-img/camisetas/cam-5.jpg"]
+       },
+        {
+         "id": 5,
+         "nombre": "",
+         "disponible": true,
+         "color": "Negro/Rojo",
+         "imagen":[ "/images/product-img/camisetas/cam-6.jpg"]
+       },
+        {
+         "id": 6,
+         "nombre": "",
+         "disponible": true,
+         "color": "Negro/Rojo",
+         "imagen":[ "/images/product-img/camisetas/cam-7.jpg"]
+       },
+        {
+         "id": 7,
+         "nombre": "",
+         "disponible": true,
+         "color": "Negro/Rojo",
+         "imagen":[ "/images/product-img/camisetas/cam-8.jpg"]
+       },
+       {
+         "id": 8,
+         "nombre": "",
+         "disponible": true,
+         "color": "Negro/Rojo",
+         "imagen":[ "/images/product-img/camisetas/cam-9.jpg"]
+       },
+       {
+         "id": 9,
+         "nombre": "",
+         "disponible": true,
+         "color": "Negro/Rojo",
+         "imagen":[ "/images/product-img/camisetas/cam-10.jpg"]
+       },
+       {
+         "id": 10,
+         "nombre": "",
+         "disponible": true,
+         "color": "Negro/Rojo",
+         "imagen":[ "/images/product-img/camisetas/cam-11.jpg"]
+       },
+         {
+         "id": 12,
+         "nombre": "",
+         "disponible": true,
+         "color": "Negro/Rojo",
+         "imagen":[ "/images/product-img/camisetas/cam-13.jpg"]
+       },
+       {
+         "id": 13,
+         "nombre": "",
+         "disponible": true,
+         "color": "Negro/Rojo",
+         "imagen":[ "/images/product-img/camisetas/cam-14.jpg"]
+       },
+        {
+         "id": 14,
+         "nombre": "",
+         "disponible": true,
+         "color": "Negro/Rojo",
+         "imagen":[ "/images/product-img/camisetas/cam-15.jpg"]
+       },
+        {
+         "id": 15,
+         "nombre": "",
+         "disponible": true,
+         "color": "Negro/Rojo",
+         "imagen":[ "/images/product-img/camisetas/cam-16.jpg"]
+       },
+       {
+         "id": 16,
+         "nombre": "",
+         "disponible": true,
+         "color": "Negro/Rojo",
+         "imagen":[ "/images/product-img/camisetas/cam-17.jpg","/images/product-img/camisetas/cam-18.jpg"]
+       },
+           {
+         "id": 17,
+         "nombre": "",
+         "disponible": true,
+         "color": "Negro/Rojo",
+         "imagen":[ "/images/product-img/camisetas/cam-26.jpg","/images/product-img/camisetas/cam-19.jpg","/images/product-img/camisetas/cam-21.jpg"]
+       },
+          {
+         "id": 18,
+         "nombre": "",
+         "disponible": true,
+         "color": "Negro/Rojo",
+         "imagen":[ "/images/product-img/camisetas/cam-23.jpg","/images/product-img/camisetas/cam-25.jpg","/images/product-img/camisetas/cam-27.jpg","/images/product-img/camisetas/cam-20.jpg"]
+       },
+        {
+         "id": 19,
+         "nombre": "",
+         "disponible": true,
+         "color": "Negro/Rojo",
+         "imagen":[ "/images/product-img/camisetas/cam-22.jpg"]
+       },
+        {
+         "id": 20,
+         "nombre": "",
+         "disponible": true,
+         "color": "Negro/Rojo",
+         "imagen":[ "/images/product-img/camisetas/cam-24.jpg"]
+       }
+
+      ]
+  }
+]
