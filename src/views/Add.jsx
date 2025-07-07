@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
+import ButHome from "../Components/ButHome";
 
-export default function AdminForm() {
+export default function Add() {
   const [autenticado, setAutenticado] = useState(false);
   const [credenciales, setCredenciales] = useState({ usuario: "", clave: "" });
   const [imagen, setImagen] = useState(null);
@@ -12,6 +13,7 @@ export default function AdminForm() {
     stock: "",
   });
   const [cargando, setCargando] = useState(false);
+
 
   useEffect(() => {
     if (localStorage.getItem("autenticado") === "true") {
@@ -29,6 +31,7 @@ export default function AdminForm() {
     }
   };
 
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm((prev) => ({ ...prev, [name]: value }));
@@ -44,7 +47,7 @@ export default function AdminForm() {
     e.preventDefault();
     setCargando(true); // 🟡 Activar loader
     const data = new FormData();
-    data.append("imagen", imagen);
+    data.append("image", imagen);
     data.append("nombre", form.nombre);
     data.append("categoria", form.categoria);
     data.append("tallas", form.tallas);
@@ -125,11 +128,14 @@ export default function AdminForm() {
         onSubmit={handleSubmit}
         className="bg-white p-6 rounded-xl shadow-xl w-full max-w-md space-y-4"
       >
-        <h2 className="text-2xl font-bold text-[hsl(26,100%,55%)]">
+       <div className="flex items-center justify-between mb-4">
+         <h2 className="text-2xl font-bold text-[#ff7d1a]">
           Crear nuevo producto
         </h2>
+       <ButHome></ButHome>
+       </div>
         <div>
-          <label className="block mb-1 font-medium">Imagen del zapato</label>
+          <label className="block mb-1 font-medium">Imagen del producto</label>
           <input
             type="file"
             accept="image/*"
@@ -153,15 +159,27 @@ export default function AdminForm() {
           className="w-full border p-2 rounded"
           required
         />
-        <input
-          type="text"
+        <label className="block mb-2 text-sm font-medium text-gray-700">
+          Categoría
+        </label>
+        <select
           name="categoria"
           value={form.categoria}
           onChange={handleChange}
-          placeholder="Categoría"
-          className="w-full border p-2 rounded"
+          className="w-full p-2 border rounded-md"
           required
-        />
+        >
+          <option value="">Selecciona una categoría</option>
+          <option value="gorras">Gorras</option>
+          <option value="camisetas_urbanas">Camisetas Urbanas</option>
+          <option value="camisetas_equipos_y_clubes">
+            Camisetas Equipos y Clubes
+          </option>
+          <option value="zapatos">Zapatos</option>
+          <option value="pupos_pupillos">Pupos y Pupillos</option>
+     
+        </select>
+
         <input
           type="text"
           name="tallas"
@@ -182,8 +200,8 @@ export default function AdminForm() {
         />
         <button
           type="submit"
-        className="w-full bg-[hsl(26,100%,55%)] text-white font-bold py-2 rounded flex items-center justify-center gap-2"
-            disabled={cargando}
+          className="w-full bg-[hsl(26,100%,55%)] text-white font-bold py-2 rounded flex items-center justify-center gap-2"
+          disabled={cargando}
         >
           {cargando ? (
             <>

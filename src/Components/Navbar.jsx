@@ -1,8 +1,7 @@
 import { useState } from "react";
 import iconMenu from "/images/icon-menu.svg";
 import iconClose from "/images/icon-close.svg";
-import iconCart from "/images/icon-cart.svg";
-import imageAvatar from "/images/image-avatar.png";
+
 import logoJM from "/logo.jpeg";
 
 export default function Navbar() {
@@ -15,21 +14,21 @@ export default function Navbar() {
       {" "}
       {/* Solo visible en móviles */}
       {/* Navbar */}
-      <nav className="bg-fm-White p-4 flex items-center justify-between font-fm-kumbh-sans">
-        <div className="flex items-center justify-center">
+      <nav className="bg-fm-White p-4 flex items-center justify-between font-fm-kumbh-sans ">
+        <div className="flex items-center justify-between flex-row-reverse w-full ">
           <button onClick={() => setIsOpen(true)} className="mr-4 flex">
-            <img src={iconMenu} alt="icon-menu" />
+            <img className="w-6" src={iconMenu} alt="icon-menu" />
           </button>
           <img src={logoJM} alt="" className="w-14 rounded-md " />
         </div>
-        <div className="flex items-center space-x-4">
+     {/*   <div className="flex items-center space-x-4">
           <button className="flex">
             <img src={iconCart} alt="iconCart" />
           </button>
           <button>
             <img src={imageAvatar} alt="icon-avatar" className="w-8 h-8" />
           </button>
-        </div>
+        </div>*/}
       </nav>
       {/* Overlay */}
       {isOpen && (
@@ -47,7 +46,7 @@ export default function Navbar() {
       >
         <div className="flex justify-between items-center p-4 ">
           <button onClick={closeMenu}>
-            <img src={iconClose} alt="icon-close" />
+            <img className="w-6" src={iconClose} alt="icon-close" />
           </button>
         </div>
         <ul className="p-4 space-y-4">

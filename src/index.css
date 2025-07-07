@@ -1,17 +1,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *)); /*dark theme*/
 @theme{
     --font-fm-kumbh-sans: 'Kumbh Sans', sans-serif;
 
-
+  --font-fm-public-sans: "Public Sans", sans-serif;
 --color-fm-Orange: hsl(26, 100%, 55%);
---color-Pale-orange: hsl(25, 100%, 94%);
+--color-fm-Pale-orange: hsl(25, 100%, 94%);
 
 
 
---color-fm-Very-dark blue: hsl(220, 13%, 13%);
+--color-fm-Very-dark_blue: hsl(220, 13%, 13%);
 --color-fm-Dark-grayish blue: hsl(219, 9%, 45%);
 --color-fm-Grayish-blue: hsl(220, 14%, 75%);
 --color-fmLight-grayish blue: hsl(223, 64%, 98%);
@@ -24,3 +25,6 @@
 
 }
 
+*{
+scroll-behavior: smooth;
+}
