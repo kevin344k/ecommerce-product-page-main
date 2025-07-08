@@ -7,7 +7,7 @@ import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-       <BrowserRouter basename='/ecommerce-product-page-main'>
+       <BrowserRouter >
       <App />
     </BrowserRouter>
   </StrictMode>,
