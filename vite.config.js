@@ -4,6 +4,6 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), tailwindcss(),],
-  base:"https://kevin344k.github.io/ecommerce-product-page-main"
+  plugins: [react(), tailwindcss(),]
+  
 })
