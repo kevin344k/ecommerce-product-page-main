@@ -146,7 +146,7 @@ export default function Add() {
             <img
               src={preview}
               alt="Preview"
-              className="mt-2 w-full h-40 object-cover rounded"
+              className="mt-2 w-full h-40 object-contain rounded"
             />
           )}
         </div>
