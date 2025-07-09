@@ -2,7 +2,7 @@ import React from 'react';
 import iconWasap from "/images/redes/icon-whatsapp.svg";
 
 function EnviarWhatsApp({ id, nombre, imagen }) {
-  const numero = '593999312678'; // Ecuador: 593 + número sin el 0
+  const numero = '593980739896'; // Ecuador: 593 + número sin el 0
  
 
   const handleEnviar = () => {
