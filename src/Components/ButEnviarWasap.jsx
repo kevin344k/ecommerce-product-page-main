@@ -7,7 +7,8 @@ function EnviarWhatsApp({ id, nombre, imagen }) {
 
   const handleEnviar = () => {
     // Usamos la URL dinámica para que WhatsApp saque preview
-    const urlProducto = `https://jmodasport.com/producto/${id}`;
+   // const urlProducto = `https://jmodasport.com/producto/${id}`;
+      const urlProducto = `${imagen}`;
 
     // Mensaje con texto + link a la página del producto
     const mensaje = `Hola, quiero pedir el producto: ${nombre}. Aquí más info: ${urlProducto}`;
