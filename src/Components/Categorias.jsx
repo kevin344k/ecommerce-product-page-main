@@ -46,10 +46,10 @@ export default function Categorias() {
         >
           <img
             src={categoria.url_cover}
-            alt={categoria.nombre}
+            alt={categoria.nombre} 
             className="w-full h-full object-cover object-center rounded-md "
           />
-          <div class="absolute w-full h-1/2 bottom-0 left-0  bg-gradient-to-t from-black/90 to-transparent3 rounded-bl-md rounded-br-md"></div>
+          <div className="absolute w-full h-1/2 bottom-0 left-0  bg-gradient-to-t from-black/90 to-transparent3 rounded-bl-md rounded-br-md"></div>
           <div className="absolute w-full  flex items-center justify-between bottom-0   font-fm-kumbh-sans  p-4  text-white rounded-full">
             <div>
               <p className="text-xl text-neutral-200">{categoria.nombre2}</p>

@@ -108,14 +108,12 @@ export default function Home() {
         </section>
 
         <div className="py-12 lg:max-w-[1200px]  m-auto">
-       
-          <div >
-           
+          <div>
             <SectionCards
               data={productosPorCategoria["camisetas_urbanas"] || []}
               titulo="Camisetas Urbanas"
             />
-                 <SectionCards
+            <SectionCards
               data={productosPorCategoria["camisetas_equipos_y_clubes"] || []}
               titulo="Camisetas Equipos y Clubes"
             />
@@ -124,16 +122,14 @@ export default function Home() {
               data={productosPorCategoria["zapatos"] || []}
               titulo="Zapatos"
             />
-     <SectionCards
+            <SectionCards
               data={productosPorCategoria["pupos_pupillos"] || []}
-            titulo="Pupos y Pupillos"
+              titulo="Pupos y Pupillos"
             />
-     <SectionCards
+            <SectionCards
               data={productosPorCategoria["gorras"] || []}
-            titulo="Gorras"
+              titulo="Gorras"
             />
-
-
           </div>
         </div>
       </main>

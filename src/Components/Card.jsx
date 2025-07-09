@@ -2,10 +2,10 @@ import React from "react";
 
 import ButsendWas from "./ButEnviarWasap.jsx";
 export default function Card({ producto }) {
-  console.log(producto);
+  console.log(producto.id);
 
   return (
-    <div className="   shadow-md rounded-md   border-Pale-orange ">
+    <div className="   shadow-md rounded-md   border-Pale-orange transition-scale duration-300 hover:scale-105 hover:cursor-pointer">
       <div className="w-[250px] h-[250px] overflow-hidden rounded-tl-md rounded-tr-md">
         <img
           className="w-full h-full  rounded-tl-md rounded-tr-md object-cover"
@@ -15,7 +15,8 @@ export default function Card({ producto }) {
       </div>
          <ButsendWas
         nombre={producto.nombre}
-        imagen="https://images.pexels.com/photos/32709250/pexels-photo-32709250.jpeg"
+        imagen={producto.imagen_url}
+        id={producto.id}
       />
 
    
