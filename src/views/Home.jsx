@@ -120,7 +120,7 @@ export default function Home() {
 
             <SectionCards
               data={productosPorCategoria["zapatos"] || []}
-              titulo="Zapatos"
+              titulo="Calzado Deportivo"
             />
             <SectionCards
               data={productosPorCategoria["pupos_pupillos"] || []}

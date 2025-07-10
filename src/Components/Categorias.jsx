@@ -18,7 +18,7 @@ export default function Categorias() {
     },
     {
       id_text:"section-Zapatos",
-      nombre1: "Zapatos",
+      nombre1: "Calzado",
       nombre2: "",
       url_cover:
         "https://images.pexels.com/photos/2364582/pexels-photo-2364582.jpeg",
@@ -32,7 +32,7 @@ export default function Categorias() {
     },
     {
       id_text:"section-Pupos y Pupillos",
-      nombre1: "Zapatos",
+      nombre1: "Calzado",
       nombre2: "Pupos y Pupillos",
       url_cover:
         "https://images.pexels.com/photos/27299916/pexels-photo-27299916.jpeg",
