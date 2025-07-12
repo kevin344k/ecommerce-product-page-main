@@ -75,7 +75,7 @@ export default function Home() {
             className="text-sm"
             href="https://www.google.com/maps/place/2%C2%B012'03.9%22S+79%C2%B053'01.4%22W/@-2.2010745,-79.8863057,17z/data=!3m1!4b1!4m4!3m3!8m2!3d-2.2010745!4d-79.8837308?hl=es&entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D"
           >
-            Guayaquil-Manabí y el Alfaro(Local 42)
+            Guayaquil- Calle Manabí y el Alfaro(Local 42)
           </a>
         </div>
         <div className="flex justify-center items-center gap-2">
