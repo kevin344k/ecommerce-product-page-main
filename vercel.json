@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/producto/:id",
-      "destination": "https://kr49kcnp-3000.use.devtunnels.ms/producto/:id"
+      "destination": "https://kr49kcnp-3000.use.devtunnels.ms/api/producto/:id"
     },
     {
       "source": "/(.*)",
