@@ -60,7 +60,7 @@ const jsonCategorias = [
                 {categoria.nombre1}
               </p>
             </div>
-            <a href={`#${categoria.id_text}`}  className="px-4 py-1 flex items-center gap-1 justify-center bg-fm-Orange rounded-full shadow-sm shadow-fm-Orange">
+            <a href={`#${categoria.id_text}`}  className="px-4 py-1 flex items-center gap-1 justify-center bg-fm-Orange rounded-full shadow-sm shadow-fm-Orange hover:scale-105">
               <p >Ir</p>
               <img className="w-3" src={iconArrow} alt="icon-arrow"></img>
             </a>
