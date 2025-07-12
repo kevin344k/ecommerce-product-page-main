@@ -9,13 +9,12 @@ const ProductoDetalle = () => {
 
   console.log(id);
 
-const url="https://kr49kcnp-3000.use.devtunnels.ms"
-
+const API_URL = import.meta.env.VITE_API_URL;
   
   useEffect(() => {
     const obtenerProducto = async () => {
       try {
-        const res = await fetch(`${url}/api/productos/${id}`); // cambia si tu ruta es distinta
+        const res = await fetch(`${API_URL}/api/productos/${id}`); // cambia si tu ruta es distinta
         if (!res.ok) throw new Error('Producto no encontrado');
         const data = await res.json();
         setProducto(data);
