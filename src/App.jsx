@@ -14,9 +14,12 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/panel" element={<AdminDashboard />} />
          <Route path="/add-product" element={<Add />} />
-          <Route path="api/productos/:id" element={<ProductoDetalle />} />
+        
      <Route path="/list-product" element={<List />} />
       </Routes>
   
   );
 }
+
+
+//  <Route path="api/productos/:id" element={<ProductoDetalle />} />

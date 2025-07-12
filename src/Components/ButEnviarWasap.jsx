@@ -4,14 +4,14 @@ import iconWasap from "/images/redes/icon-whatsapp.svg";
 function EnviarWhatsApp({ id, nombre, imagen }) {
   const numero = '593980739896'; // Ecuador: 593 + número sin el 0
  
-
+const API_URL = import.meta.env.VITE_API_URL; 
   const handleEnviar = () => {
     // Usamos la URL dinámica para que WhatsApp saque preview
-    //const urlProducto = `https://jmodasport.com/api/productos/${id}`;
+    const urlProducto = `${API_URL}/api/productos/${id}`;
      // const urlProducto = `${imagen}`;
 
     // Mensaje con texto + link a la página del producto
-    const mensaje = `Hola, quiero pedir el producto:${imagen}`;
+    const mensaje = `Hola, quiero pedir el producto:${urlProducto}`;
 
     const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
     window.open(url, '_blank');
