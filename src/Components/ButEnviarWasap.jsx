@@ -7,11 +7,11 @@ function EnviarWhatsApp({ id, nombre, imagen }) {
 
   const handleEnviar = () => {
     // Usamos la URL dinámica para que WhatsApp saque preview
-    const urlProducto = `https://jmodasport.com/api/productos/${id}`;
+    //const urlProducto = `https://jmodasport.com/api/productos/${id}`;
      // const urlProducto = `${imagen}`;
 
     // Mensaje con texto + link a la página del producto
-    const mensaje = `Hola, quiero pedir el producto: ${nombre}. Aquí más info: ${urlProducto}`;
+    const mensaje = `Hola, quiero pedir el producto:${imagen}`;
 
     const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
     window.open(url, '_blank');
