@@ -7,7 +7,7 @@ function EnviarWhatsApp({ id, nombre, imagen }) {
 const API_URL = import.meta.env.VITE_API_URL; 
   const handleEnviar = () => {
     // Usamos la URL dinámica para que WhatsApp saque preview
-    const urlProducto = `${API_URL}/api/productos/${id}`;
+    const urlProducto = `https://kr49kcnp-3000.use.devtunnels.ms/api/producto/${id}`;
      // const urlProducto = `${imagen}`;
 
     // Mensaje con texto + link a la página del producto
