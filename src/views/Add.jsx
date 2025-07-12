@@ -14,6 +14,8 @@ export default function Add() {
   });
   const [cargando, setCargando] = useState(false);
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 
   useEffect(() => {
     if (localStorage.getItem("autenticado") === "true") {
@@ -55,7 +57,7 @@ export default function Add() {
 
     try {
       const res = await fetch(
-        "https://kr49kcnp-3000.use.devtunnels.ms/api/productos",
+       `${API_URL}/api/productos/`,
         {
           method: "POST",
           body: data,

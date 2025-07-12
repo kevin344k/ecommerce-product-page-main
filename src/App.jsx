@@ -5,6 +5,7 @@ import Home from "./views/Home";
 import AdminDashboard from "./views/AdminDashboard";
 import Add from "./views/Add"; // Importa el componente de agregar producto
 import List from "./views/List"; // Importa el componente de agregar producto
+import ProductoDetalle from "./views/ProductoDetalle"; // Importa el componente de detalle del producto
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/panel" element={<AdminDashboard />} />
          <Route path="/add-product" element={<Add />} />
+          <Route path="api/productos/:id" element={<ProductoDetalle />} />
      <Route path="/list-product" element={<List />} />
       </Routes>
   

@@ -7,12 +7,12 @@ const List = () => {
   const [cargando, setCargando] = useState(true);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
-
+const API_URL = import.meta.env.VITE_API_URL;
   // Obtener productos
   useEffect(() => {
     const obtenerProductos = async () => {
       try {
-        const res = await fetch('https://kr49kcnp-3000.use.devtunnels.ms/api/productos');
+        const res = await fetch(`${API_URL}/api/productos/`);
         if (!res.ok) throw new Error('Error al obtener productos');
         const data = await res.json();
         setProductos(data);
