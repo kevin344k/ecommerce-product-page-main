@@ -45,24 +45,24 @@ const jsonCategorias = [
       {jsonCategorias.map((categoria, index) => (
         <div
           key={index}
-          className="relative w-80 h-80 flex flex-col items-center shadow-lg  rounded-md border border-neutral-300"
+          className="relative w-80 h-80 flex flex-col items-center shadow-lg  lg:w-50 lg:h-60 rounded-md border border-neutral-300"
         >
-          <LazyImage
+          <img
             src={categoria.url_cover}
             alt={categoria.nombre} 
             className="w-full h-full object-cover object-center rounded-md "
           />
-          <div className="absolute z-20 w-full h-1/2 bottom-0 left-0  bg-gradient-to-t from-black/90 to-transparent3 rounded-bl-md rounded-br-md"></div>
-          <div className="absolute w-full z-20 flex items-center justify-between bottom-0   font-fm-kumbh-sans  p-4  text-white rounded-full">
+          <div className="absolute z-20 w-full h-1/2 lg:h-2/3 bottom-0 left-0  bg-gradient-to-t from-black/90 to-transparent3 rounded-bl-md rounded-br-md"></div>
+          <div className="absolute w-full z-20 flex items-center justify-between bottom-0   lg:flex-col  font-fm-kumbh-sans  p-4  text-white rounded-full">
             <div>
               <p className="text-xl text-neutral-200">{categoria.nombre2}</p>
               <p className="text-3xl font-semibold font-fm-public-sans text-neutral-400">
                 {categoria.nombre1}
               </p>
             </div>
-            <a href={`#${categoria.id_text}`}  className="px-4 py-1 flex items-center gap-1 justify-center bg-fm-Orange rounded-full shadow-sm shadow-fm-Orange hover:scale-105">
-              <p >Ir</p>
-              <img className="w-3" src={iconArrow} alt="icon-arrow"></img>
+            <a href={`#${categoria.id_text}`}  className="px-4 py-1 lg:w-full flex justify-center items-center gap-1 lg:4 justify-center bg-neutral-500 rounded-full shadow-sm shadow-neutral-900 hover:scale-105">
+              <p >ver</p>
+              <img className="w-2" src={iconArrow} alt="icon-arrow"></img>
             </a>
           </div>
         </div>

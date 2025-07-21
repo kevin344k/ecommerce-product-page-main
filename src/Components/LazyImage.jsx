@@ -2,7 +2,9 @@ import React, { useEffect, useRef, useState } from "react";
 
 export default function LazyImage({ src, alt, className = "", skeletonClass = "" }) {
   const [hasLoaded, setHasLoaded] = useState(false);
+  const [fitMode, setFitMode] = useState("object-contain"); // default
   const containerRef = useRef();
+  const imageRef = useRef();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -21,10 +23,36 @@ export default function LazyImage({ src, alt, className = "", skeletonClass = ""
     return () => observer.disconnect();
   }, [hasLoaded]);
 
+  useEffect(() => {
+    if (hasLoaded && imageRef.current) {
+      const img = imageRef.current;
+
+      const checkCropping = () => {
+        const containerRatio = containerRef.current.clientWidth / containerRef.current.clientHeight;
+        const imageRatio = img.naturalWidth / img.naturalHeight;
+
+        const recorteHorizontal = imageRatio > containerRatio;
+        const recorteVertical = imageRatio < containerRatio;
+
+        if (recorteHorizontal || recorteVertical) {
+          setFitMode("object-contain");
+        } else {
+          setFitMode("object-cover");
+        }
+      };
+
+      if (img.complete) {
+        checkCropping();
+      } else {
+        img.onload = checkCropping;
+      }
+    }
+  }, [hasLoaded]);
+
   return (
     <div
       ref={containerRef}
-      className={`relative w-full h-full overflow-hidden rounded-md  ${className}`}
+      className={`relative w-full h-full overflow-hidden rounded-md ${className}`}
       style={{ minHeight: "250px" }}
     >
       {!hasLoaded && (
@@ -35,10 +63,11 @@ export default function LazyImage({ src, alt, className = "", skeletonClass = ""
 
       {hasLoaded && (
         <img
+          ref={imageRef}
           src={src}
           alt={alt}
           loading="lazy"
-          className="w-full h-full object-cover shadow-md rounded-md"
+          className={`max-w-full max-h-full border border-neutral-200 h-full w-full shadow-md rounded-tl-3xl rounded-tr-3xl transition-all duration-300 ${fitMode}`}
         />
       )}
     </div>

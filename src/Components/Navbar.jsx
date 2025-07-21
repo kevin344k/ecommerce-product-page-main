@@ -10,17 +10,23 @@ export default function Navbar() {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <div className="md:hidden">
+    <div className="">
       {" "}
       {/* Solo visible en móviles */}
       {/* Navbar */}
-      <nav className="bg-fm-White p-4 flex items-center justify-between font-fm-kumbh-sans ">
+      <nav className="bg-fm-White p-4 lg:max-w-[1200px] m-auto flex items-center justify-between font-fm-kumbh-sans ">
         <div className="flex items-center justify-between flex-row-reverse w-full ">
           <button onClick={() => setIsOpen(true)} className="mr-4 flex">
-            <img className="w-6" src={iconMenu} alt="icon-menu" />
+            <img className="w-6 md:hidden" src={iconMenu} alt="icon-menu" />
+           
           </button>
           <img src={logoJM} alt="" className="w-14 rounded-md " />
         </div>
+        <div><ul className="hidden md:flex space-x-4">
+          <li>Calzado</li>
+          <li>Gorras</li>
+          <li>Camisetas</li>
+          <li>Contacto</li></ul></div>
      {/*   <div className="flex items-center space-x-4">
           <button className="flex">
             <img src={iconCart} alt="iconCart" />
