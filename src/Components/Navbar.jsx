@@ -1,8 +1,10 @@
 import { useState } from "react";
 import iconMenu from "/images/icon-menu.svg";
 import iconClose from "/images/icon-close.svg";
+import { Link } from 'react-router-dom';
 
 import logoJM from "/logo.jpeg";
+
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,11 +12,11 @@ export default function Navbar() {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <div className="">
+    <div className="bg-neutral-100">
       {" "}
-      {/* Solo visible en móviles */}
+   
       {/* Navbar */}
-      <nav className="bg-fm-White p-4 lg:max-w-[1200px] m-auto flex items-center justify-between font-fm-kumbh-sans ">
+      <nav className=" p-4 lg:max-w-[1200px] m-auto flex items-center justify-between font-fm-kumbh-sans ">
         <div className="flex items-center justify-between flex-row-reverse w-full ">
           <button onClick={() => setIsOpen(true)} className="mr-4 flex">
             <img className="w-6 md:hidden" src={iconMenu} alt="icon-menu" />
@@ -22,19 +24,15 @@ export default function Navbar() {
           </button>
           <img src={logoJM} alt="" className="w-14 rounded-md " />
         </div>
-        <div><ul className="hidden md:flex space-x-4">
+        <div><ul className="hidden md:flex space-x-7">
+          <li>
+            <Link to="/">Inicio</Link>
+          </li>
           <li>Calzado</li>
           <li>Gorras</li>
           <li>Camisetas</li>
           <li>Contacto</li></ul></div>
-     {/*   <div className="flex items-center space-x-4">
-          <button className="flex">
-            <img src={iconCart} alt="iconCart" />
-          </button>
-          <button>
-            <img src={imageAvatar} alt="icon-avatar" className="w-8 h-8" />
-          </button>
-        </div>*/}
+
       </nav>
       {/* Overlay */}
       {isOpen && (
@@ -57,13 +55,13 @@ export default function Navbar() {
         </div>
         <ul className="p-4 space-y-4">
           <li>
-            <a
-              href="#inicio"
+            <Link
+              to="/"
               onClick={closeMenu}
               className="text-fm-Black font-fm-kumbh-sans font-bold hover:text-blue-600"
             >
               Inicio
-            </a>
+            </Link>
           </li>
           <li>
             <a

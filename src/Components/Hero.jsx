@@ -34,20 +34,10 @@ const jsonRedes = [
 ];
 export default function Hero() {
   return (
-    <div className=" flex gap-4 justify-between">
-      <div className="flex flex-col justify-between items-start  gap-2">
-        <div className="mt-20">
-          <p className="font-fm-kumbh-sans text-8xl font-bold text-neutral-900">
-            JModasport
-          </p>
-          <p className="text-neutral-600 mt-3 text-xl">
-            Tu mejor versión empieza con lo que llevas puesto
-          </p>
-        </div>
-        <div className="flex flex-col justify-center items-start gap-2">
-         
-
-          <div className="flex justify-center items-center gap-2 lg:gap-5">
+    <div className=" flex flex-col-reverse gap-4  w-full items-center justify-center">
+      <div className="flex flex-col justify-between items-center  gap-2">
+        <div className="flex flex-col items-center justify-center lg:items-start gap-2">
+          <div className="flex  w-full justify-center items-center gap-2 lg:gap-5">
             <a className="w-7 lg:w-8 cursor-pointer" href={jsonRedes[0].url}>
               <img src={jsonRedes[0].icon}></img>
             </a>
@@ -61,10 +51,10 @@ export default function Hero() {
               <img src={jsonRedes[3].icon}></img>
             </a>
           </div>
-           <div className="flex justify-center items-center gap-2">
+          <div className="flex w-fit justify-center items-center gap-2">
             <img className="w-4" src={icon_gps}></img>
             <a
-              className="text-sm text-neutral-500"
+              className="text-sm  text-center text-neutral-500"
               href="https://www.google.com/maps/place/2%C2%B012'03.9%22S+79%C2%B053'01.4%22W/@-2.2010745,-79.8863057,17z/data=!3m1!4b1!4m4!3m3!8m2!3d-2.2010745!4d-79.8837308?hl=es&entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D"
             >
               Guayaquil- Calle Manabí y el Alfaro(Local 42)
@@ -73,8 +63,19 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="grid justify-end  lg:grid-cols-3 lg:gap-4">
-        <Categorias></Categorias>
+      <div className="flex flex-col w-full  justify-center  items-center gap-2">
+        <div className="mt-10 ">
+          <p className="font-fm-kumbh-sans text-4xl text-center  md:text-6xl lg:text-8xl font-bold text-neutral-900">
+            JModasport
+          </p>
+          <p className="text-neutral-600 text-sm text-center mt-3 md:text-lg lg:text-xl">
+            Tu mejor versión empieza con lo que llevas puesto
+          </p>
+        </div>
+
+        <div className="flex  w-full flex-wrap lg:flex-row md:gap-5 lg:flex-row justify-center items-center gap-2 my-15">
+          <Categorias></Categorias>
+        </div>
       </div>
     </div>
   );

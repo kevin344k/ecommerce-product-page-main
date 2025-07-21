@@ -38,8 +38,8 @@ export default function Home() {
   return (
     <>
       <NavBar></NavBar>
-      <main className="px-4 py-12">
-        <section className="flex flex-col justify-between xl:max-w-[1250px] lg:max-w-[1100px] lg:m-auto lg:flex-col ">
+      <main className="px-4 py-3 lg:py-12">
+        <section className="flex  justify-between items-center xl:max-w-[1250px] lg:max-w-[1100px] lg:m-auto lg:flex-col ">
           <Hero></Hero>
         </section>
 

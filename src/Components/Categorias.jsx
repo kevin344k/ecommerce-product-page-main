@@ -45,7 +45,7 @@ const jsonCategorias = [
       {jsonCategorias.map((categoria, index) => (
         <div
           key={index}
-          className="relative w-80 h-80 flex flex-col items-center shadow-lg  lg:w-50 lg:h-60 rounded-md border border-neutral-300"
+          className="relative w-[270px] h-[270px] lg:w-80 lg:h-80 flex flex-col items-center shadow-lg  lg:w-50 lg:h-60 rounded-md border border-neutral-300"
         >
           <img
             src={categoria.url_cover}
@@ -60,7 +60,7 @@ const jsonCategorias = [
                 {categoria.nombre1}
               </p>
             </div>
-            <a href={`#${categoria.id_text}`}  className="px-4 py-1 lg:w-full flex justify-center items-center gap-1 lg:4 justify-center bg-neutral-500 rounded-full shadow-sm shadow-neutral-900 hover:scale-105">
+            <a href={`#${categoria.id_text}`}  className="px-4 py-1 lg:w-full flex justify-center  items-center gap-1 justify-center bg-neutral-500 rounded-full shadow-sm shadow-neutral-900 hover:bg-fm-Orange hover:scale-105">
               <p >ver</p>
               <img className="w-2" src={iconArrow} alt="icon-arrow"></img>
             </a>
